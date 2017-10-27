@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闽师社区</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/headSilde.js"></script>
+    <script type="text/javascript">
+        var t = n = 0,count;
+        var t1 = 0;
+        $(function(){
+            /*头部轮播效果 */
+            count=$(".container .slides .slide li").length;
+            $(".container .slides .slide li:not(:first-child)").hide();
+            $(".container .slides .pagination li").click(function(){
+                n = $(this).val() - 1;
+                $(".container .slides .slide li").filter(":visible").fadeOut(500).parent().children().eq(n).fadeIn(1000);
+                $(this).toggleClass("current");
+                $(this).siblings().removeAttr("class");
+            });
+            t = setInterval("showAuto()", 4000);
+            $(".container .slides .slide li").hover(function(){clearInterval(t)}, function(){clearInterval(t);t = setInterval("showAuto()", 4000);});
+
+            /*专题轮播图*/
+            $(".container .mnnu .prev").click(function(){
+                if($(".container .mnnu .slides ul").css("left") == "0px")
+                    $(".container .mnnu .slides ul").animate({left: "-245px"}, 700);
+                else
+                    $(".container .mnnu .slides ul").animate({left: "0"}, 700);
+            });
+            $(".container .mnnu .next").click(function(){
+                if($(".container .mnnu .slides ul").css("left") == "0px")
+                    $(".container .mnnu .slides ul").animate({left:"-245px"},700);
+                else
+                    $(".container .mnnu .slides ul").animate({left:"0"},700);
+            });
+            t1 = setInterval("showPic()", 4000);
+            $(".container .mnnu .slides").hover(function(){clearInterval(t1)}, function(){clearInterval(t1);t1 = setInterval("showPic()", 4000);});
+        });
+        /*头部自动切换图片*/
+        function showAuto()
+        {
+            n = n >=(count - 1) ? 0 : ++n;
+            $(".container .slides .pagination li").eq(n).trigger('click');
+        }
+        /*专题自动切换图片*/
+        function showPic(){
+            $(".container .mnnu .prev").trigger('click');
+        }
+    </script>
+</head>
+<body>
+<div class="index">
+    <div class="main">
+        <div class="header">
+            <div class="img"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">魅力·闽师</a>
+                        <ul class="submenu">
+                            <li><a href="#">闽师简介</a></li>
+                            <li><a href="#">闽师风景</a></li>
+                            <li><a href="#">闽师校徽</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">新闻·热点</a>
+                        <ul class="submenu">
+                            <li><a href="#">闽南热点</a></li>
+                            <li><a href="#">学术报告</a></li>
+                            <li><a href="#">重要通知</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">技术·论坛</a>
+                        <ul class="submenu">
+                            <li><a href="#">学习论坛</a></li>
+                            <li><a href="#">生活贴吧</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">物品·市场</a>
+                        <ul class="submenu">
+                            <li><a href="#">新品市场</a></li>
+                            <li><a href="#">二手市场</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">留言·表白</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">登陆</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slides">
+                <ul class="slide">
+                    <li id="slide1"></li>
+                    <li id="slide2"></li>
+                    <li id="slide3"></li>
+                </ul>
+                <ul class="pagination">
+                    <li class="current" value="1"></li><li class="" value="2"></li><li class="" value="3"></li>
+                </ul>
+            </div>
+            <div class="article">
+                    <div class="academic">
+                        <h3><span class="more"><a href="#">进入&gt;&gt;</a></span>学术报告</h3>
+                        <ul>
+                            <li><span class="time">10-10</span><a href="#"> 瑞华教授团队破获... </a></li>
+                            <li><span class="time">10-10</span><a href="#"> 瑞华教授团队破获... </a></li>
+                            <li><span class="time">09-26</span><a href="#">  李永光博士课题组取...  </a></li>
+                            <li><span class="time">09-26</span><a href="#">  李永光博士课题组取...  </a></li>
+                            <li><span class="time">09-26</span><a href="#">  李永光博士课题组取...  </a></li>
+                            <li><span class="time">09-26</span><a href="#">  李永光博士课题组取...  </a></li>
+                            <li><span class="time">09-26</span><a href="#">  李永光博士课题组取...  </a></li>
+                        </ul>
+                    </div>
+                    <div class="mnew">
+                        <h3><span class="more"><a href="#">进入&gt;&gt;</a></span>热点聚焦</h3>
+                        <ul>
+                            <li><span class="time">10-10</span><a href="#"> 我校徐瑞华教授团队破获肝癌“身份指纹”... </a></li>
+                            <li><span class="time">10-10</span><a href="#"> 我校徐瑞华教授团队破获肝癌“身份指纹”... </a></li>
+                            <li><span class="time">09-26</span><a href="#">  化学学院李永光博士课题组取得两亲性Pt...  </a></li>
+                        </ul>
+                    </div>
+                    <div class="hnew">
+                        <h3><span class="more"><a href="#">进入&gt;&gt;</a></span>闽师新闻</h3>
+                        <ul>
+                            <li><span class="time">10-10</span><a href="#"> 我校徐瑞华教授团队破获肝癌“身份指纹”... </a></li>
+                            <li><span class="time">10-10</span><a href="#"> 我校徐瑞华教授团队破获肝癌“身份指纹”... </a></li>
+                            <li><span class="time">09-26</span><a href="#">  化学学院李永光博士课题组取得两亲性Pt...  </a></li>
+                        </ul>
+                    </div>
+                    <div class="notice">
+                        <h3><span class="more"><a href="#">进入&gt;&gt;</a></span>通知公告</h3>
+                        <ul>
+                            <li><span class="time">10-10</span><a href="#"> 我校徐瑞华教授团队破获肝癌“身份指纹”... </a></li>
+                            <li><span class="time">10-10</span><a href="#"> 我校徐瑞华教授团队破获肝癌“身份指纹”... </a></li>
+                            <li><span class="time">09-26</span><a href="#">  化学学院李永光博士课题组取得两亲性Pt...  </a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="mnnu">
+                <div class="slides">
+                    <ul>
+                        <li>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/xlwb.png" ><br>新浪官方微博</a></div>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/xywx.jpg" ><br>校友总会微信</a></div>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/gzwx.jpg" ><br>公众官方微信</a></div>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/twwx.png" ><br>闽师团委微信</a></div>
+                        </li>
+
+                        <li>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/msxb.jpg" ><br>闽师校报</a></div>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/xsxb.png" ><br>学生信报</a></div>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/xytx.jpg" ><br>校友通讯</a></div>
+                            <div class="campuses"><a href="#" target="_blank"><img src="images/ljqn.jpg" ><br>龙江青年</a></div>
+                        </li>
+                    </ul>
+                    <p class="prev">«</p><p class="next">»</p>
+                </div>
+                <div class="fastnav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="#"> 闽师官网 </a>&nbsp;&nbsp;&nbsp;<a href="#"> 教务系统 </a></li>
+                        <li><a href="#"> 管理系统 </a>&nbsp;&nbsp;&nbsp;<a href="#"> 管理系统 </a></li>
+                        <li><a href="#"> 图书资源 </a>&nbsp;&nbsp;&nbsp;<a href="#"> 网络服务 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p><span>版权所有：闽南师范大学</span><span>地址：福建省漳州市县前直街36号</span><span>邮编：363000</span></p>
+            <p><span>校长信箱：mnsdxz@mnnu.edu.cn</span><span>闽ICP备15009579号</span><br></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
