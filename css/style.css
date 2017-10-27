@@ -68,6 +68,8 @@ table{border-collapse:collapse;border-spacing: 0;}
 .index .container .mnnu .campuses { margin-top: 30px; padding-left: 8px; float: left; width: 110px; height: 80px; text-align: center; }
 .index .container .mnnu .campuses img { width: 60px; height: 60px; }
 
+/*news.html*/
+
 /*新闻*/
 .news .container .left { float: left; width: 220px; border-top: 4px #333333 solid;}
 .news .container .left span{display: block; line-height: 40px; text-align: center; font-size: 20px; color: green;text-shadow: 1px 1px 1px green;}
@@ -77,6 +79,20 @@ table{border-collapse:collapse;border-spacing: 0;}
 .news .container .right .cont { margin: 5px 0px 10px 0px; font-size: 14px; line-height: 28px; padding: 0px 5px; }
 .news .container .right h1 { font-size: 18px; color: #000000; font-family: SimHei, Arial, Helvetica, sans-serif; padding: 10px 0px 10px 5px; margin: 0px; font-weight: normal; }
 .news .container .right p{text-indent: 2em;}
+
+/*forum.html*/
+
+/*论坛*/
+.forum .container{background-color: #666666;}
+.forum .container .left{width: 700px;float: left;}
+.forum .container .left .itab{height:36px; border-bottom:solid 1px #d0dee5;margin-top: 10px;}
+.forum .container .left .itab li{float:left;height:37px; line-height:37px;background-color: #a7afba; border-right:solid 1px #d3dbde;}
+.forum .container .left .itab ul li a{font-size:14px; color:#000; padding-left:25px; padding-right:25px;}
+.forum .container .left .itab ul li a.selected{ height:37px; display:block; background-color: #ffffff; font-weight:bold;border-top: solid 2px #00a4ac;border-left: solid 1px #d0dee5;}
+.forum .container .left .seraches{margin-top: 10px;}
+.forum .container .left .seraches input[type='text']{width: 150px; height: 32px; line-height: 32px; text-indent: 10px;border-radius: 4px;}
+.forum .container .right{width: 300px;float: right;}
+.forum .container .right .hot{width: 290px;height: 500px;background-color: #5c6665;margin-top: 10px;margin-left: 10px;border-radius:5px;}
 
 
 
