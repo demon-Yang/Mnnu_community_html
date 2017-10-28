@@ -20,7 +20,7 @@
                 $(this).siblings().removeAttr("class");
             });
             t = setInterval("showAuto()", 4000);
-            $(".container .slides .slide li").hover(function(){clearInterval(t)}, function(){clearInterval(t);t = setInterval("showAuto()", 4000);});
+            $(".container .slides .slide li").hover(function(){clearInterval(t)}, function(){clearInterval(t);t=0;t = setInterval("showAuto()", 4000);});
 
             /*专题轮播图*/
             $(".container .mnnu .prev").click(function(){
@@ -36,7 +36,7 @@
                     $(".container .mnnu .slides ul").animate({left:"0"},700);
             });
             t1 = setInterval("showPic()", 4000);
-            $(".container .mnnu .slides").hover(function(){clearInterval(t1)}, function(){clearInterval(t1);t1 = setInterval("showPic()", 4000);});
+            $(".container .mnnu .slides").hover(function(){clearInterval(t1)}, function(){clearInterval(t1);t1=0;t1 = setInterval("showPic()", 4000);});
         });
         /*头部自动切换图片*/
         function showAuto()
