@@ -6,6 +6,19 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/headSilde.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            alert($(window).scrollTop());
+
+          $(".retract").click(function(){
+              if($(this).text() == "回复")
+                    $(this).text("收取回复");
+              else
+                    $(this).text("回复");
+              $(this).parent().parent().next().slideToggle(1000);
+          });
+        })
+    </script>
 </head>
 <body>
 <div class="detail">
@@ -74,8 +87,9 @@
                             <div class="inright">
                                 <div class="comment">
                                     <p>终于有人回应了，谢谢关照</p>
+                                    <img src="images/symbol3.png">
                                     <div class="empty"></div>
-                                    <div><p align="right">2017-09-30 16:59<span>&nbsp;收起回复&nbsp;&nbsp;</span></p></div>
+                                    <div><p align="right">2017-09-30 16:59&nbsp;&nbsp;<span class="retract">&nbsp;收起回复&nbsp;&nbsp;</span></p></div>
                                     <div class="reply">
                                         <ul>
                                             <li>
@@ -102,15 +116,17 @@
                             </div>
                             <div style="clear: both"></div>
                         </li>
-                         <li>
+                         <li class="per">
                              <div class="inleft">
                                  <img src="images/detail1.jpg"><p class="name" align="center">沈卓盈</p>
                              </div>
                              <div class="inright">
                                  <div class="comment">
                                      <p>终于有人回应了，谢谢关照</p>
+                                     <p>终于有人回应了，谢谢关照</p>
+                                     <p>终于有人回应了，谢谢关照</p>
                                      <div class="empty"></div>
-                                     <div><p align="right">2017-09-30 16:59<span>&nbsp;收起回复&nbsp;&nbsp;</span></p></div>
+                                     <div><p align="right">2017-09-30 16:59&nbsp;&nbsp;<span class="retract">&nbsp;收起回复&nbsp;&nbsp;</span></p></div>
                                      <div class="reply">
                                          <ul>
                                              <li>
@@ -125,11 +141,17 @@
                                                  <p align="right">2014-9-27 09:34&nbsp;回复&nbsp;&nbsp;</p>
                                                  <hr/>
                                              </li>
-
+                                             <li>
+                                                 <img src="images/detail1.jpg">
+                                                 <span class="total"><span class="from">法拉诗韵:</span> 回复  <span class="to">魄岁月 </span>:华仔哈哈哈，你好你好</span>
+                                                 <p align="right">2014-9-27 09:34&nbsp;回复&nbsp;&nbsp;</p>
+                                                 <hr/>
+                                             </li>
                                          </ul>
                                      </div>
                                  </div>
                              </div>
+                             <div style="clear: both"></div>
                          </li>
                      </ul>
                 </div>
