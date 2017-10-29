@@ -86,11 +86,11 @@ table{border-collapse:collapse;border-spacing: 0;}
 /*论坛*/
 .forum .container{background-color: #666666;}
 .forum .container .left{width: 700px;float: left;}
-.forum .container .left .itab{height:36px; border-bottom:solid 1px #d0dee5;margin-top: 10px;}
+.forum .container .left .itab{height:37px; border-bottom:solid 1px #d0dee5;margin-top: 10px;}
 .forum .container .left .itab li{float:left;height:37px; line-height:37px;background-color: #a7afba; border-right:solid 1px #d3dbde;}
 .forum .container .left .itab ul li a{font-size:14px; color:#000; padding-left:25px; padding-right:25px;}
 .forum .container .left .itab ul li a.selected{ height:37px; display:block; background-color: #ffffff; font-weight:bold;border-top: solid 2px #00a4ac;border-left: solid 1px #d0dee5;}
-.forum .container .left .seraches{margin-top: 10px;height: 45px;float: right;}
+.forum .container .left .seraches{margin-top: 10px;height: 45px;margin-left: 300px;}
 .forum .container .left .seraches input[type='text']{width: 150px; height: 32px; line-height: 32px; text-indent: 10px;border-radius: 4px;}
 .forum .container .left .seraches select{width: 130px; height: 35px; line-height: 32px;border-radius: 4px;text-align: center;}
 .forum .container .left .seraches input[type='submit']{width: 80px; height: 35px; line-height: 32px;border-radius: 4px;text-align: center;}
@@ -150,14 +150,27 @@ table{border-collapse:collapse;border-spacing: 0;}
 .detail .container .right .hot span{font-size: 14px;}
 .detail .container .right .hot img{float: left;width: 80px;height: 64px; border-radius: 3px;object-fit: cover;}
 .detail .container .right .hot .name{color: #28df5e;font-size: 10px;}
-.detail .container .right .hot .motto{color: #999999;font-size: 10px;} 
+.detail .container .right .hot .motto{color: #999999;font-size: 10px;}
 
 
+/*market.html*/
 
-
-
-
-
-
-
+/*物品市场*/
+.market .container .itab{height:37px; border-bottom:solid 1px #d0dee5;margin-top: 10px;}
+.market .container .itab li{float:left;height:37px; line-height:37px;background-color: #a7afba; border-right:solid 1px #d3dbde;}
+.market .container .itab ul li a{font-size:14px; color:#000; padding-left:25px; padding-right:25px;}
+.market .container .itab ul li a.selected{ height:37px; display:block; background-color: #ffffff; font-weight:bold;border-top: solid 2px #00a4ac;border-left: solid 1px #d0dee5;}
+.market .container .seraches{margin-top: 10px;height: 45px;margin-left: 700px;}
+.market .container .seraches input[type='text']{width: 200px; height: 32px; line-height: 32px; text-indent: 10px;border-radius: 4px;}
+.market .container .seraches input[type='submit']{width: 80px; height: 35px; line-height: 32px;border-radius: 4px;text-align: center;}
+.market .container .goods{width: 100%;}
+.market .container .goods li{float: left;width: 320px;height: 330px;background-color: #dddddd;margin-top: 20px;border-radius: 5px;margin-left: 10px;}
+.market .container .goods .left{width: 50px;height: 300px;float: left;}
+.market .container .goods .left:first-child{margin-top: 30px;}
+.market .container .goods .small{width: 50px;height: 50px;margin-top: 5px;margin-left: 5px;border-radius: 4px;object-fit: cover;}
+.market .container .goods .right {width: 270px;height: 220px;float: right;font-size: 0;}
+.market .container .goods .title{font-weight: 900;margin-top: 10px;height: 25px;line-height: 25px;font-size: 14px;}
+.market .container .goods .contact{text-indent: 2em;}
+.market .container .goods .content{text-indent: 2em;}
+.market .container .goods .big{width: 240px;height: 200px;margin-left: 18px;border-radius: 4px;object-fit: cover;}
 
