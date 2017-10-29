@@ -6,6 +6,18 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/headSilde.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            setInterval(function(){
+                if( $(window).scrollTop() > 186){
+                    var topvalue = $(window).scrollTop()-185;
+                    $(".container .right").css({"position":"absolute","top":""+topvalue+"px","left":"700px"});
+                }else{
+                    $(".container .right").css({"position":"static"});
+                }
+            },500);
+          });
+    </script>
 </head>
 <body>
 <div class="forum">
