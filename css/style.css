@@ -178,7 +178,7 @@ body{background-color: #dfdfdf;}
 /*notes.html*/
 
 /*留言表白*/
-
+.notes .container{background: url("../images/notesbg.png")}
 
 /*person.html*/
 
@@ -191,6 +191,6 @@ body{background-color: #dfdfdf;}
 .person .container .left ul li:nth-child(3){background-color: #60ab78;}
 .person .container .left ul li:nth-child(4){background-color: #c0c0c0;}
 .person .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
-.person .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.person .container .right{width: 800px;height: 600px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 
 
