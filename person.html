@@ -2,26 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>留言表白</title>
+    <title>个人主页</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/headSilde.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/wish.js"></script>
-    <style type="text/css">
-        #wish{height:850px;margin-top:15px;position:relative;width:1000px;background-color: #f4f4f4;border-radius: 5px;}
-        .wish{background:url(images/wish_bg.png) no-repeat 0 0;color:#000;height:166px;padding:10px 20px 30px 20px;width:185px;}
-        .wish-close{background:url(images/wish_close_bg.png) no-repeat 0 0;display:none;position:absolute;right:5px;top:-5px;width:17px;height:17px;}
-    </style>
-    <script type="text/javascript">
-        $(function(){
-            $('#wish').wish();
-            $('.wish').draggable({containment:'#wish',scroll:false});
-        });
-    </script>
 </head>
 <body>
-<div class="notes">
+<div class="person">
     <div class="main">
         <div class="header">
             <div class="img"></div>
@@ -61,18 +48,15 @@
             </div>
         </div>
         <div class="container">
-            <ul id="wish">
-                <li><p>11111fsdfsafas<p>fsdjfsk</li>
-                <li>22222fsdfas</li>
-                <li>33333fsada</li>
-                <li>44444fsdfas</li>
-                <li>55555fsda</li>
-                <li>55555fsda</li>
-                <li>55555fsda</li>
-                <li>55555fsda</li>
-                <li>55555fsda</li>
-                <li>55555fsda</li>
-            </ul>
+            <div class="left">
+                <ul>
+                    <li><a>个人信息</a></li>
+                    <li><a>论坛帖子</a></li>
+                    <li><a>物品市场</a></li>
+                    <li><a>留言表白</a></li>
+                </ul>
+            </div>
+            <div class="right"></div>
         </div>
         <div class="footer">
             <p><span>版权所有：闽南师范大学</span><span>地址：福建省漳州市县前直街36号</span><span>邮编：363000</span></p>

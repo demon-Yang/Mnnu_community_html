@@ -180,4 +180,17 @@ body{background-color: #dfdfdf;}
 /*留言表白*/
 
 
+/*person.html*/
+
+/*个人主页*/
+.person .container{margin-top: 10px;}
+.person .container .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.person .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.person .container .left ul li:nth-child(1){background-color: #a0a684;}
+.person .container .left ul li:nth-child(2){background-color: #6cacae;}
+.person .container .left ul li:nth-child(3){background-color: #60ab78;}
+.person .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.person .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.person .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+
 
