@@ -254,3 +254,100 @@ body{background-color: #dfdfdf;}
 .personfdetail .container .right .private .lists .function{height: 30px;line-height: 30px;}
 .personfdetail .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
 
+
+/*personmarket.html*/
+
+/*个人商品*/
+.personmarket .container{margin-top: 10px;}
+.personmarket .container .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.personmarket .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.personmarket .container .left ul li:nth-child(1){background-color: #a0a684;}
+.personmarket .container .left ul li:nth-child(2){background-color: #6cacae;}
+.personmarket .container .left ul li:nth-child(3){background-color: #60ab78;}
+.personmarket .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.personmarket .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.personmarket .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.personmarket .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personmarket .container .right .private > p a{display: inline-block;width: 70px; height: 30px; line-height: 30px;border-radius: 4px;text-align: center;background-color: #979797;margin-right: 10px;font-size: 13px;margin-bottom: 5px;}
+.personmarket .container .right .private .lists li{margin: 5px;}
+.personmarket .container .right .private .lists .title{height: 30px;line-height: 30px;font-size: 18px;}
+.personmarket .container .right .private .lists .function{height: 30px;line-height: 30px;}
+.personmarket .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
+
+
+/*personmcheck.html*/
+
+/*个人商品详情*/
+.personmcheck .container{margin-top: 10px;}
+.personmcheck .container > .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.personmcheck .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.personmcheck .container .left ul li:nth-child(1){background-color: #a0a684;}
+.personmcheck .container .left ul li:nth-child(2){background-color: #6cacae;}
+.personmcheck .container .left ul li:nth-child(3){background-color: #60ab78;}
+.personmcheck .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.personmcheck .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.personmcheck .container > .right{width: 800px;height: 700px;float: right;background: url("../images/personbg.png") no-repeat;}
+.personmcheck .container > .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personmcheck .container .right .private > p{line-height: 30px;height: 30px;font-size: 18px;margin-left: 30px;}
+.personmcheck .container .right .private > p span{line-height: 30px;height: 30px;font-size: 18px;color: #979797;}
+.personmcheck .container .right .private ul{margin-top: 50px;margin-left: 160px;}
+.personmcheck .container .right .private li{float: left;width: 320px;height: 330px;background-color: #f4f4f4;margin-top: 10px;border-radius: 5px;margin-left: 10px;}
+.personmcheck .container .right .private .left{width: 50px;height: 300px;float: left;}
+.personmcheck .container .right .private .left:first-child{margin-top: 30px;}
+.personmcheck .container .right .private .small{width: 50px;height: 50px;margin-top: 5px;margin-left: 5px;border-radius: 4px;object-fit: cover;}
+.personmcheck .container .right .private .right {width: 270px;height: 220px;float: right;font-size: 0;}
+.personmcheck .container .right .private .title{font-weight: 900;margin-top: 10px;height: 25px;line-height: 25px;font-size: 14px;}
+.personmcheck .container .right .private .contact{text-indent: 2em;}
+.personmcheck .container .right .private .content{text-indent: 2em;}
+.personmcheck .container .right .private  .big{width: 240px;height: 200px;margin-left: 18px;border-radius: 4px;object-fit: cover;}
+
+
+/*personmedit.html*/
+
+/*发布商品*/
+.personmedit .container{margin-top: 10px;}
+.personmedit .container > .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.personmedit .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.personmedit .container .left ul li:nth-child(1){background-color: #a0a684;}
+.personmedit .container .left ul li:nth-child(2){background-color: #6cacae;}
+.personmedit .container .left ul li:nth-child(3){background-color: #60ab78;}
+.personmedit .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.personmedit .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.personmedit .container > .right{width: 800px;height: 700px;float: right;background: url("../images/personbg.png") no-repeat;}
+.personmedit .container > .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personmedit .container .right td{height: 35px;font-size: 16px;}
+.personmedit .container .right input[type='text']{width: 180px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
+.personmedit .container .right input[type='submit'],input[type='button']{width: 60px; height: 25px; line-height: 25px;border-radius: 4px;text-align: center;background-color: #a7afba;margin-right: 10px;}
+.personmedit .container .right input[type='file']{width: 200px; height: 25px; line-height: 20px;}
+.personmedit .container .right textarea{font-size: 14px;border-radius: 4px;}
+.personmedit .container .right .private .edit{margin-top: 90px;margin-left: 20px;float: left;width: 300px;}
+.personmedit .container .right .private .preview {margin-top: 90px;margin-right: 30px;float: right;width: 320px;height: 330px;}
+
+.personmedit .container .right .private li{float: left;width: 320px;height: 330px;background-color: #f4f4f4;border-radius: 5px;}
+.personmedit .container .right .private .left{width: 50px;height: 300px;float: left;}
+.personmedit .container .right .private .left:first-child{margin-top: 30px;}
+.personmedit .container .right .private .small{width: 50px;height: 50px;margin-top: 5px;margin-left: 5px;border-radius: 4px;object-fit: cover;background-color: #ffffff;}
+.personmedit .container .right .private .right {width: 270px;height: 220px;float: right;font-size: 0;}
+.personmedit .container .right .private .title{font-weight: 900;margin-top: 10px;height: 25px;line-height: 25px;font-size: 14px;}
+.personmedit .container .right .private .contact{text-indent: 2em;}
+.personmedit .container .right .private .content{text-indent: 2em;}
+.personmedit .container .right .private .big{width: 240px;height: 200px;margin-left: 18px;border-radius: 4px;object-fit: cover;}
+
+
+/*personnotes.html*/
+
+/*个人留言*/
+.personnotes .container{margin-top: 10px;}
+.personnotes .container .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.personnotes .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.personnotes .container .left ul li:nth-child(1){background-color: #a0a684;}
+.personnotes .container .left ul li:nth-child(2){background-color: #6cacae;}
+.personnotes .container .left ul li:nth-child(3){background-color: #60ab78;}
+.personnotes .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.personnotes .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.personnotes .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.personnotes .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personnotes .container .right .private .lists li{margin: 5px;}
+.personnotes .container .right .private .lists .text{height: 25px;line-height: 25px;font-size: 14px;}
+.personnotes .container .right .private .lists .function{height: 30px;line-height: 30px;}
+.personnotes .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
