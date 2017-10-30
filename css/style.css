@@ -180,6 +180,7 @@ body{background-color: #dfdfdf;}
 /*留言表白*/
 .notes .container{background: url("../images/notesbg.png")}
 
+
 /*person.html*/
 
 /*个人主页*/
@@ -191,6 +192,65 @@ body{background-color: #dfdfdf;}
 .person .container .left ul li:nth-child(3){background-color: #60ab78;}
 .person .container .left ul li:nth-child(4){background-color: #c0c0c0;}
 .person .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
-.person .container .right{width: 800px;height: 600px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.person .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.person .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.person .container .right .private .img{background:url("../images/personbg.jpg");width: 116px;height: 116px;margin-top: 50px;margin-left: 90px;border-radius: 4px;float: left;}
+.person .container .right .private img{background:url("../images/personbg.png");width: 110px;height: 110px;margin-left: 3px;margin-top: 3px;border-radius: 4px;}
+.person .container .right .info{float: left;}
+.person .container .right .info p{margin-left: 50px;font-size: 16px;height: 30px;line-height: 30px;}
+.person .container .right .info p:nth-child(1){margin-top: 50px;}
+.person .container .right .info p span{display: inline-block;text-indent: 2em;color: #9b9b9b;font-size: 14px;}
+.person .container .right .edit{clear: both;margin-right: 20px;}
+.person .container .right .edit span{display: inline-block;height: 25px;width: 60px;line-height: 25px;background-color: #9d9d9d;border-radius: 4px;text-align: center;}
+.person .container .right .update{margin: 40px 40px;}
+.person .container .right .update .base{height: 200px; width: 280px;float: left;}
+.person .container .right .update .pwd{height: 200px; width: 280px;float: right;margin-top: 36px;}
+.person .container .right .update td{height: 35px;font-size: 16px;}
+.person .container .right .update input[type='text'],input[type='password'],input[type='email']{width: 180px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
+.person .container .right .update input[type='submit']{width: 60px; height: 25px; line-height: 25px;border-radius: 4px;text-align: center;background-color: #a7afba;margin-right: 10px;}
+.person .container .right .update input[type='file']{width: 200px; height: 25px; line-height: 20px;}
+.person .container .right .update textarea{font-size: 14px;border-radius: 4px;}
 
+
+/*personforum.html*/
+
+/*个人论坛*/
+.personforum .container{margin-top: 10px;}
+.personforum .container .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.personforum .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.personforum .container .left ul li:nth-child(1){background-color: #a0a684;}
+.personforum .container .left ul li:nth-child(2){background-color: #6cacae;}
+.personforum .container .left ul li:nth-child(3){background-color: #60ab78;}
+.personforum .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.personforum .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.personforum .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.personforum .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personforum .container .right .private > p a{display: inline-block;width: 70px; height: 30px; line-height: 30px;border-radius: 4px;text-align: center;background-color: #979797;margin-right: 10px;font-size: 13px;margin-bottom: 5px;}
+.personforum .container .right .private .lists li{margin: 5px;}
+.personforum .container .right .private .lists .title{height: 30px;line-height: 30px;font-size: 18px;}
+.personforum .container .right .private .lists .function{height: 30px;line-height: 30px;}
+.personforum .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
+
+
+/*personfdetail.html*/
+ 
+/*个人回复*/
+.personfdetail .container{margin-top: 10px;}
+.personfdetail .container .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.personfdetail .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.personfdetail .container .left ul li:nth-child(1){background-color: #a0a684;}
+.personfdetail .container .left ul li:nth-child(2){background-color: #6cacae;}
+.personfdetail .container .left ul li:nth-child(3){background-color: #60ab78;}
+.personfdetail .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.personfdetail .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.personfdetail .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.personfdetail .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personfdetail .container .right .private .lists li{margin: 5px;}
+.personfdetail .container .right .private .lists .title {height: 30px;line-height: 30px;font-size: 15px;}
+.personfdetail .container .right .private .lists .title .to{color: #666666;}
+.personfdetail .container .right .private .lists .title span{height: 30px;line-height: 30px;font-size: 18px;}
+.personfdetail .container .right .private .lists .source {height: 30px;line-height: 30px;font-size: 15px;}
+.personfdetail .container .right .private .lists .source span{height: 30px;line-height: 30px;font-size: 18px;}
+.personfdetail .container .right .private .lists .function{height: 30px;line-height: 30px;}
+.personfdetail .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
 
