@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播切换</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".container .private .show").hide();
+            $(".preview").click(function(){
+                $(".container .private .show").slideDown(1000);
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="slideshow">
+    <div class="main">
+        <div class="header">
+            <div class="img"></div>
+            <div class="manager">
+                <a href="#">退出登录</a>
+                <span class="name">admin</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <ul>
+                    <li><a>管理首页</a></li>
+                    <li><a>轮播切换</a></li>
+                    <li><a>学术报告</a></li>
+                    <li><a>热点聚焦</a></li>
+                    <li><a>闽师新闻</a></li>
+                    <li><a>通知公告</a></li>
+                    <li><a>技术论坛</a></li>
+                    <li><a>物品市场</a></li>
+                    <li><a>留言表白</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="private">
+                    <p>>><span class="nav">首页轮播图切换</span></p>
+                    <div class="upload">
+                        <form action="">
+                            <table>
+                                <tr>
+                                    <td>图片1：</td>
+                                    <td><input type="file" name=""/></td>
+                                    <td><input type="button" value="预览" class="preview"/></td>
+                                </tr>
+                                <tr>
+                                    <td>图片2：</td>
+                                    <td><input type="file" name=""/></td>
+                                    <td><input type="button" value="预览"/></td>
+                                </tr>
+                                <tr>
+                                    <td>图片3：</td>
+                                    <td><input type="file" name=""/></td>
+                                    <td><input type="button" value="预览" /></td>
+                                </tr>
+                            </table>
+                            <input type="submit" value="提交"/>
+                        </form>
+                    </div>
+                    <hr/>
+                    <div class="show">
+                        <img src="images/slide1.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p><span>版权所有：闽南师范大学</span><span>地址：福建省漳州市县前直街36号</span><span>邮编：363000</span></p>
+            <p><span>校长信箱：mnsdxz@mnnu.edu.cn</span><span>闽ICP备15009579号</span><br></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
