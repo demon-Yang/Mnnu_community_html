@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*all*/
+*{font-size:9pt;margin:0;padding:0;}
+ul{display:block;margin:0;padding:0;list-style:none;}
+li{display:block;margin:0;padding:0;list-style: none;}
+dl,dt,dd,span{margin:0;padding:0;}
+a,a:focus{text-decoration:none;color:#000;outline:none;}
+a:hover{color:#00a4ac;text-decoration:none;}
+table{border-collapse:collapse;border-spacing: 0;}
+body{background-color: #dfdfdf;}
+
+/*头部*/
+.main{width: 1000px;margin: 0 auto;}
+.header{width: 100%;}
+.header .img{height: 151px;background: url("../images/head.jpg") no-repeat;}
+.header .manager{background-color: #307B97;height: 40px;width: 100%;}
+.header .manager span{display: inline-block;width: 100px;height: 20px;line-height: 20px;border-radius: 10px;text-align: center;font-size: 15px;float: right;background-color: #ffffff;margin-top: 5px;margin-right: 5px;}
+.header .manager a{display: inline-block;width: 90px;height: 30px;line-height: 30px;background-color: #798a6b;border-radius: 5px;text-align: center;font-size: 15px;float: right;margin-right: 20px;}
+
+/*尾部*/
+.footer {clear: both;width: 1000px;height: 70px;line-height: 20px; text-align: center; color: #ffffff; background: #307B97;}
+.footer p{padding-top: 7px;}
+
+
+/*index.html*/
+
+/*管理员主页*/
+.index .container{margin-top: 10px;}
+.index .container .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.index .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.index .container .left ul li:nth-child(1){background-color: #a0a684;}
+.index .container .left ul li:nth-child(2){background-color: #6cacae;}
+.index .container .left ul li:nth-child(3){background-color: #58a370;}
+.index .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.index .container .left ul li:nth-child(5){background-color: #d87678;}
+.index .container .left ul li:nth-child(6){background-color: #af96ca;}
+.index .container .left ul li:nth-child(7){background-color: #80a52d;}
+.index .container .left ul li:nth-child(8){background-color: #dab3af;}
+.index .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.index .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.index .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
