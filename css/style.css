@@ -246,10 +246,9 @@ body{background-color: #dfdfdf;}
 .personfpost .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 .personfpost .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
 .personfpost .container .right p{height: 30px;line-height: 30px;margin-left: 10px;font-size: 18px;margin-bottom: 20px;}
-.personfpost .container .right input[type='text']{width: 350px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
+.personfpost .container .right p input[type='text']{width: 350px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
 .personfpost .container .right textarea{width:660px;height:450px;}
-.personfpost .container .right input[type='submit'],input[type='button']{width: 70px; height: 30px; line-height: 25px;border-radius: 4px;background-color: #a7afba;margin-top: 20px;margin-left: 590px;}
-
+.personfpost .container .right input[type='submit']{width: 70px; height: 30px; line-height: 25px;border-radius: 4px;background-color: #a7afba;margin-top: 20px;margin-left: 590px;}
 
 
 /*personfdetail.html*/
@@ -337,7 +336,8 @@ body{background-color: #dfdfdf;}
 .personmedit .container > .right .private{margin:40px 60px;height: 630px;width: 680px;}
 .personmedit .container .right td{height: 35px;font-size: 16px;}
 .personmedit .container .right input[type='text']{width: 180px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
-.personmedit .container .right input[type='submit'],input[type='button']{width: 60px; height: 25px; line-height: 25px;border-radius: 4px;text-align: center;background-color: #a7afba;margin-right: 10px;}
+.personmedit .container .right input[type='submit']{width: 60px; height: 25px; line-height: 25px;border-radius: 4px;text-align: center;background-color: #a7afba;margin-right: 10px;}
+.personmedit .container .right input[type='button']{width: 60px; height: 25px; line-height: 25px;border-radius: 4px;text-align: center;background-color: #a7afba;margin-right: 10px;}
 .personmedit .container .right input[type='file']{width: 200px; height: 25px; line-height: 20px;}
 .personmedit .container .right textarea{font-size: 14px;border-radius: 4px;}
 .personmedit .container .right .private .edit{margin-top: 90px;margin-left: 20px;float: left;width: 300px;}
