@@ -18,9 +18,10 @@ body{background-color: #dfdfdf;}
 .header .menu li a{font-size: 15px; }
 .header .menu li:nth-child(7){float: right;}
 .header .menu li:nth-child(8){float: right;}
-.header .menu li:hover { color:#0c5486 background-color: #ffffff; background: #ffffff;}
+.header .menu li:hover { background-color: #ffffff;}
 .header .menu a {display: block;}
-.header .menu li:hover > a { border-left: 3px solid #C4302B; color:#0c5486 }
+.header .menu li:hover > a { border-left: 3px solid #C4302B; color: #000000
+}
 /*旋转效果*/
 .header .submenu { position: relative;z-index: 1; -webkit-perspective: 400px; -moz-perspective: 400px; -ms-perspective: 400px; -o-perspective: 400px; perspective: 400px; }
 .header .submenu li { opacity: 0; -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -ms-transform: rotateY(90deg); -o-transform: rotateY(90deg); transform: rotateY(90deg);
@@ -194,14 +195,16 @@ body{background-color: #dfdfdf;}
 .person .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
 .person .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 .person .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.person .container .right .private p{height: 30px;font-size: 17px;line-height: 30px;}
+.person .container .right .private p .nav{display: inline-block;color: #858585;height: 30px;font-size: 17px;line-height: 30px;}
 .person .container .right .private .img{background:url("../images/personbg.jpg");width: 116px;height: 116px;margin-top: 50px;margin-left: 90px;border-radius: 4px;float: left;}
 .person .container .right .private img{background:url("../images/personbg.png");width: 110px;height: 110px;margin-left: 3px;margin-top: 3px;border-radius: 4px;}
 .person .container .right .info{float: left;}
 .person .container .right .info p{margin-left: 50px;font-size: 16px;height: 30px;line-height: 30px;}
 .person .container .right .info p:nth-child(1){margin-top: 50px;}
 .person .container .right .info p span{display: inline-block;text-indent: 2em;color: #9b9b9b;font-size: 14px;}
-.person .container .right .edit{clear: both;margin-right: 20px;}
-.person .container .right .edit span{display: inline-block;height: 25px;width: 60px;line-height: 25px;background-color: #9d9d9d;border-radius: 4px;text-align: center;}
+.person .container .right .private .edit{clear: both;margin-right: 20px;}
+.person .container .right .private .edit span{display: inline-block;height: 25px;width: 60px;line-height: 25px;background-color: #9d9d9d;border-radius: 4px;text-align: center;}
 .person .container .right .update{margin: 40px 40px;}
 .person .container .right .update .base{height: 200px; width: 280px;float: left;}
 .person .container .right .update .pwd{height: 200px; width: 280px;float: right;margin-top: 36px;}
@@ -225,11 +228,14 @@ body{background-color: #dfdfdf;}
 .personforum .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
 .personforum .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 .personforum .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
-.personforum .container .right .private > p a{display: inline-block;width: 70px; height: 30px; line-height: 30px;border-radius: 4px;text-align: center;background-color: #979797;margin-right: 10px;font-size: 13px;margin-bottom: 5px;}
+.personforum .container .right .private p{font-size: 17px;}
+.personforum .container .right .private p span{display: inline-block;color: #858585;height: 30px;font-size: 17px;line-height: 30px;}
+.personforum .container .right .private p a{display: inline-block;width:70px; height: 30px; line-height: 30px;border-radius: 4px;text-align: center;background-color: #979797;margin-right: 10px;font-size: 13px;margin-bottom: 5px;}
 .personforum .container .right .private .lists li{margin: 5px;}
-.personforum .container .right .private .lists .title{height: 30px;line-height: 30px;font-size: 18px;}
-.personforum .container .right .private .lists .function{height: 30px;line-height: 30px;}
-.personforum .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
+.personforum .container .right .private .lists .title{height: 25px;line-height: 25px;font-size: 15px;}
+.personforum .container .right .private .lists .function{height: 25px;line-height: 25px;margin-bottom: 8px;}
+.personforum .container .right .private .lists .function span{font-size: 13px;}
+.personforum .container .right .private .lists .function a{display:inline-block;height: 24px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
 
 
 /*personfpost.html*/
@@ -245,7 +251,9 @@ body{background-color: #dfdfdf;}
 .personfpost .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
 .personfpost .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 .personfpost .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
-.personfpost .container .right p{height: 30px;line-height: 30px;margin-left: 10px;font-size: 18px;margin-bottom: 20px;}
+.personfpost .container .right .private p{font-size: 17px;}
+.personfpost .container .right .private p span{display: inline-block;color: #858585;height: 30px;font-size: 17px;line-height: 30px;}
+.personfpost .container .right p{height: 30px;line-height: 30px;margin-left: 10px;margin-bottom: 15px;}
 .personfpost .container .right p input[type='text']{width: 350px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
 .personfpost .container .right textarea{width:660px;height:450px;}
 .personfpost .container .right input[type='submit']{width: 70px; height: 30px; line-height: 25px;border-radius: 4px;background-color: #a7afba;margin-top: 20px;margin-left: 590px;}
@@ -264,14 +272,16 @@ body{background-color: #dfdfdf;}
 .personfdetail .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
 .personfdetail .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 .personfdetail .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personfdetail .container .right .private p{height: 30px;font-size: 17px;line-height: 30px;}
+.personfdetail .container .right .private p .nav{display: inline-block;color: #858585;height: 30px;font-size: 17px;line-height: 30px;}
 .personfdetail .container .right .private .lists li{margin: 5px;}
 .personfdetail .container .right .private .lists .title {height: 30px;line-height: 30px;font-size: 15px;}
 .personfdetail .container .right .private .lists .title .to{color: #666666;}
-.personfdetail .container .right .private .lists .title span{height: 30px;line-height: 30px;font-size: 18px;}
+.personfdetail .container .right .private .lists .title span{height: 30px;line-height: 30px;font-size: 17px;}
 .personfdetail .container .right .private .lists .source {height: 30px;line-height: 30px;font-size: 15px;}
 .personfdetail .container .right .private .lists .source span{height: 30px;line-height: 30px;font-size: 18px;}
-.personfdetail .container .right .private .lists .function{height: 30px;line-height: 30px;}
-.personfdetail .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
+.personfdetail .container .right .private .lists .function{height: 25px;line-height: 25px;margin-bottom:5px;}
+.personfdetail .container .right .private .lists .function a{display:inline-block;height: 24px;font-size: 10px;width:40px;text-align: center;border-radius: 4px; line-height: 24px;background-color: #979797;}
 
 
 /*personmarket.html*/
@@ -287,11 +297,14 @@ body{background-color: #dfdfdf;}
 .personmarket .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
 .personmarket .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 .personmarket .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
-.personmarket .container .right .private > p a{display: inline-block;width: 70px; height: 30px; line-height: 30px;border-radius: 4px;text-align: center;background-color: #979797;margin-right: 10px;font-size: 13px;margin-bottom: 5px;}
+.personmarket .container .right .private p{font-size: 17px;}
+.personmarket .container .right .private p span{display: inline-block;color: #858585;height: 30px;font-size: 17px;line-height: 30px;}
+.personmarket .container .right .private p a{display: inline-block;width:70px; height: 30px; line-height: 30px;border-radius: 4px;text-align: center;background-color: #979797;margin-right: 10px;font-size: 13px;margin-bottom: 5px;}
 .personmarket .container .right .private .lists li{margin: 5px;}
-.personmarket .container .right .private .lists .title{height: 30px;line-height: 30px;font-size: 18px;}
-.personmarket .container .right .private .lists .function{height: 30px;line-height: 30px;}
-.personmarket .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
+.personmarket .container .right .private .lists .title{height: 25px;line-height: 25px;font-size: 15px;}
+.personmarket .container .right .private .lists .function{height: 25px;line-height: 25px;margin-bottom: 8px;}
+.personmarket .container .right .private .lists .function span{font-size: 13px;}
+.personmarket .container .right .private .lists .function a{display:inline-block;height: 24px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
 
 
 /*personmcheck.html*/
@@ -334,14 +347,16 @@ body{background-color: #dfdfdf;}
 .personmedit .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
 .personmedit .container > .right{width: 800px;height: 700px;float: right;background: url("../images/personbg.png") no-repeat;}
 .personmedit .container > .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personmedit .container .right .private p{font-size: 17px;}
+.personmedit .container .right .private p .nav{display: inline-block;color: #858585;height: 30px;font-size: 17px;line-height: 30px;}
 .personmedit .container .right td{height: 35px;font-size: 16px;}
 .personmedit .container .right input[type='text']{width: 180px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
 .personmedit .container .right input[type='submit']{width: 60px; height: 25px; line-height: 25px;border-radius: 4px;text-align: center;background-color: #a7afba;margin-right: 10px;}
 .personmedit .container .right input[type='button']{width: 60px; height: 25px; line-height: 25px;border-radius: 4px;text-align: center;background-color: #a7afba;margin-right: 10px;}
 .personmedit .container .right input[type='file']{width: 200px; height: 25px; line-height: 20px;}
 .personmedit .container .right textarea{font-size: 14px;border-radius: 4px;}
-.personmedit .container .right .private .edit{margin-top: 90px;margin-left: 20px;float: left;width: 300px;}
-.personmedit .container .right .private .preview {margin-top: 90px;margin-right: 30px;float: right;width: 320px;height: 330px;}
+.personmedit .container .right .private .edit{margin-top: 60px;margin-left: 20px;float: left;width: 300px;}
+.personmedit .container .right .private .preview {margin-top: 60px;margin-right: 30px;float: right;width: 320px;height: 330px;}
 
 .personmedit .container .right .private li{float: left;width: 320px;height: 330px;background-color: #f4f4f4;border-radius: 5px;}
 .personmedit .container .right .private .left{width: 50px;height: 300px;float: left;}
@@ -349,8 +364,8 @@ body{background-color: #dfdfdf;}
 .personmedit .container .right .private .small{width: 50px;height: 50px;margin-top: 5px;margin-left: 5px;border-radius: 4px;object-fit: cover;background-color: #ffffff;}
 .personmedit .container .right .private .right {width: 270px;height: 220px;float: right;font-size: 0;}
 .personmedit .container .right .private .title{font-weight: 900;margin-top: 10px;height: 25px;line-height: 25px;font-size: 14px;}
-.personmedit .container .right .private .contact{text-indent: 2em;}
-.personmedit .container .right .private .content{text-indent: 2em;}
+.personmedit .container .right .private .contact{text-indent: 2em;font-size: 13px;}
+.personmedit .container .right .private .content{text-indent: 2em;font-size: 13px;}
 .personmedit .container .right .private .big{width: 240px;height: 200px;margin-left: 18px;border-radius: 4px;object-fit: cover;}
 
 
@@ -367,7 +382,9 @@ body{background-color: #dfdfdf;}
 .personnotes .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
 .personnotes .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
 .personnotes .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personnotes .container .right .private p{font-size: 17px;}
+.personnotes .container .right .private p .nav{display: inline-block;color: #858585;height: 30px;font-size: 17px;line-height: 30px;}
 .personnotes .container .right .private .lists li{margin: 5px;}
 .personnotes .container .right .private .lists .text{height: 25px;line-height: 25px;font-size: 14px;}
-.personnotes .container .right .private .lists .function{height: 30px;line-height: 30px;}
+.personnotes .container .right .private .lists .function{height: 30px;line-height: 30px;margin-bottom: 4px;}
 .personnotes .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
