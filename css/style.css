@@ -232,6 +232,26 @@ body{background-color: #dfdfdf;}
 .personforum .container .right .private .lists .function a{display:inline-block;height: 25px;width:40px;text-align: center;border-radius: 4px; line-height: 25px;background-color: #979797;}
 
 
+/*personfpost.html*/
+
+/*个人发帖*/
+.personfpost .container{margin-top: 10px;}
+.personfpost .container .left{width: 200px;background-color: #ffffff;height: 200px;float: left;}
+.personfpost .container .left ul li{font-size: 30px;text-align: center;height: 50px;line-height: 50px;border-bottom: solid 1px #787878;border-radius: 5px;}
+.personfpost .container .left ul li:nth-child(1){background-color: #a0a684;}
+.personfpost .container .left ul li:nth-child(2){background-color: #6cacae;}
+.personfpost .container .left ul li:nth-child(3){background-color: #60ab78;}
+.personfpost .container .left ul li:nth-child(4){background-color: #c0c0c0;}
+.personfpost .container .left ul li a{font-size: 20px;display: block;letter-spacing: 10px;font-family: cursive;}
+.personfpost .container .right{width: 800px;height: 700px;background-color: #ffffff;float: right;background: url("../images/personbg.png") no-repeat;}
+.personfpost .container .right .private{margin:40px 60px;height: 630px;width: 680px;}
+.personfpost .container .right p{height: 30px;line-height: 30px;margin-left: 10px;font-size: 18px;margin-bottom: 20px;}
+.personfpost .container .right input[type='text']{width: 350px; height: 25px; line-height: 25px; text-indent: 10px;border-radius: 4px;}
+.personfpost .container .right textarea{width:660px;height:450px;}
+.personfpost .container .right input[type='submit'],input[type='button']{width: 70px; height: 30px; line-height: 25px;border-radius: 4px;background-color: #a7afba;margin-top: 20px;margin-left: 590px;}
+
+
+
 /*personfdetail.html*/
  
 /*个人回复*/
