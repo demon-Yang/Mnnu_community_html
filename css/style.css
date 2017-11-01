@@ -126,6 +126,7 @@ body{background-color: #dfdfdf;}
 .detail .container .left .landlord .name{font-size: 18px;color: #022303;}
 .detail .container .left .landlord .motto{color: #999999;}
 .detail .container .left .landlord p{margin-right: 20px;}
+.detail .container .left .landlord .type{display: inline-block;background-color: #b1b8bc;width: 80px;border-radius: 4px;text-align: center;}
 .detail .container .left .landlord .reply{display: inline-block;background-color: #d4dbdf;width: 50px;border-radius: 4px;text-align: center;}
 .detail .container .left .landlord .title{font-size: 25px;text-align: center;height: 50px;line-height: 50px;}
 .detail .container .left .landlord .img img{width: 80px;height: 80px;object-fit: cover;border-radius: 4px;}
@@ -179,7 +180,12 @@ body{background-color: #dfdfdf;}
 /*notes.html*/
 
 /*留言表白*/
-.notes .container{background: url("../images/notesbg.png")}
+
+.notes .container ul{width: 1000px;height: 850px;background: url("../images/notesbg.png")}
+.notes .container .edit{margin-top: 10px;margin-left: 130px;}
+.notes .container .edit textarea{width: 700px;height: 70px;border-radius: 5px;}
+.notes .container .edit span{width: 595px;height: 30px;border-radius: 5px;display: inline-block;margin-left: 20px;}
+.notes .container .edit input[type='submit']{width: 100px;height: 30px;font-size: 15px;border-radius: 5px;background-color: #7c7c7c;margin-top: 10px;}
 
 
 /*person.html*/

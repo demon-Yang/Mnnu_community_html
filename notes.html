@@ -16,9 +16,12 @@
     </style>
     <script type="text/javascript">
         $(function(){
+            /*留言板*/
             $('#wish').wish();
             $('.wish').draggable({containment:'#wish',scroll:false});
-        });
+
+            /*表情包*/
+        })
     </script>
 </head>
 <body>
@@ -68,6 +71,13 @@
                 <li><textarea readonly>大范甘迪和可以接电话</textarea></li>
                 <li><textarea readonly>该如何一头热</textarea></li>
             </ul>
+            <div class="edit">
+                <form action="">
+                    <textarea name="note" id="note"></textarea><br/>
+                    <span class="emotion">表情</span>
+                    <input type="submit" value="我要上墙"/>
+                </form>
+            </div>
         </div>
         <div class="footer">
             <p><span>版权所有：闽南师范大学</span><span>地址：福建省漳州市县前直街36号</span><span>邮编：363000</span></p>
