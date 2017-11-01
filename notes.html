@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/headSilde.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/wish.js"></script>
+    <script type="text/javascript" src="js/jquery.qqFace.js"></script>
     <style type="text/css">
         #wish{height:850px;margin-top:15px;position:relative;width:1000px;background-color: #f4f4f4;border-radius: 5px;background: url("images/notesbg.png") no-repeat;}
         .wish{background:url(images/wishbg.png) no-repeat 0 0;color:#000;height:166px;padding:10px 20px 30px 20px;width:185px;}
@@ -21,7 +22,24 @@
             $('.wish').draggable({containment:'#wish',scroll:false});
 
             /*表情包*/
+            $('.emotion').qqFace({
+                id : 'facebox',
+                assign:'note',
+                path:'arclist/'	//表情存放的路径
+            });
+            $("#submit").click(function(){
+                var str = $("#note").val();
+                $("#wish li  ").text(replace_em(str));
+            });
         })
+
+        function replace_em(str){
+            str = str.replace(/\</g,'&lt;');
+            str = str.replace(/\>/g,'&gt;');
+            str = str.replace(/\n/g,'<br/>');
+            str = str.replace(/\[em_([0-9]*)\]/g,'<img src="arclist/$1.gif" border="0" />');
+            return str;
+        }
     </script>
 </head>
 <body>
@@ -75,7 +93,7 @@
                 <form action="">
                     <textarea name="note" id="note"></textarea><br/>
                     <span class="emotion">表情</span>
-                    <input type="submit" value="我要上墙"/>
+                    <input type="button" value="我要上墙" id="submit"/>
                 </form>
             </div>
         </div>

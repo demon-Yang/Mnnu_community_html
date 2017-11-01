@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
-
+    <link type="text/css" rel="stylesheet" href="css/jquery.slider.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slider.min.js"></script>
+    <script type="text/javascript">
+       $(function(){
+           $("#slider").slider({
+               width:250,
+               callback: function(result) {
+                   $("#result1").text(result);
+               }
+           });
+       })
+    </script>
 </head>
 <body>
-
+    <div class="login">
+        <div class="left">
+            <img src="images/loginbg.jpg"/>
+        </div>
+        <div class="right">
+            <form action="">
+                <table>
+                    <tr>
+                        <td colspan="2"><span class="title">登录</span></td>
+                        <td><span class="close">X</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><hr/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="" placeholder="请输入邮箱账号"/></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" name="" placeholder="请输入密码"/></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="nocount">没账号？</span><a href="" class="registernow">立即注册</a></td>
+                        <td><a href="" class="forget">忘记密码？</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div id="slider" class="slider"></div></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="submit" value="登录"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
