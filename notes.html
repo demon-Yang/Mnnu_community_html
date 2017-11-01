@@ -25,11 +25,12 @@
             $('.emotion').qqFace({
                 id : 'facebox',
                 assign:'note',
-                path:'arclist/'	//表情存放的路径
+                path:'images/qqface/'	//表情存放的路径
             });
             $("#submit").click(function(){
                 var str = $("#note").val();
-                $("#wish li  ").text(replace_em(str));
+                $("#wish").append("<li><div class='text'>"+replace_em(str)+"</div></li>");
+
             });
         })
 
@@ -37,7 +38,7 @@
             str = str.replace(/\</g,'&lt;');
             str = str.replace(/\>/g,'&gt;');
             str = str.replace(/\n/g,'<br/>');
-            str = str.replace(/\[em_([0-9]*)\]/g,'<img src="arclist/$1.gif" border="0" />');
+            str = str.replace(/\[em_([0-9]*)\]/g,'<img src="images/qqface/$1.gif" border="0" />');
             return str;
         }
     </script>
@@ -84,15 +85,16 @@
         </div>
         <div class="container">
             <ul id="wish">
-                <li><textarea readonly>他认为台湾特委托威特我图网</textarea></li>
-                <li><textarea readonly>太热问题问题问题问题</textarea></li>
-                <li><textarea readonly>大范甘迪和可以接电话</textarea></li>
-                <li><textarea readonly>该如何一头热</textarea></li>
+                <li><div class="text">发顺丰的萨福克</div></li>
+                <li><div class="text">法撒旦法师法萨芬</div></li>
+                <li><div class="text">法师打发斯蒂芬</div></li>
+                <li><div class="text">发生日访问</div></li>
+                <li><div class="text">VR额污染而温柔</div></li>
             </ul>
             <div class="edit">
                 <form action="">
                     <textarea name="note" id="note"></textarea><br/>
-                    <span class="emotion">表情</span>
+                    <span class="emotion"><img src="images/qqface/1.gif"></span>
                     <input type="button" value="我要上墙" id="submit"/>
                 </form>
             </div>
