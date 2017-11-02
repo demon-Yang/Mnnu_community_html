@@ -11,9 +11,22 @@
             $(".forgetpwd").css({"left":mheight+"px"});
 
         })
-        function send(){
-            if( $(".send").val == "发送验证码"){
-            }
+        //倒计时
+        function countdown(){
+            $('.send').val('60秒后重发');
+            var second = 60;
+            var timer = null;
+            timer = setInterval(function(){
+                second -= 1;
+                if(second >0 ){
+                    $('.send').attr("disabled",true);
+                    $('.send').val(second+"秒后重发");
+                }else{
+                    clearInterval(timer);
+                    $('.send').attr("disabled",false);
+                    $('.send').val("发送验证码");
+                }
+            },1000);
         }
     </script>
 </head>
@@ -38,7 +51,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" class="send" value="发送验证码" onclick="send()" />
+                        <input type="button" class="send" value="发送验证码" onclick="countdown()" />
                     </td>
                 </tr>
                 <tr>

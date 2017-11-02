@@ -11,6 +11,23 @@
             $(".register").css({"left":mheight+"px"});
 
         })
+        //倒计时
+        function countdown(){
+            $('.send').val('60秒后重发');
+            var second = 60;
+            var timer = null;
+            timer = setInterval(function(){
+                second -= 1;
+                if(second >0 ){
+                    $('.send').attr("disabled",true);
+                    $('.send').val(second+"秒后重发");
+                }else{
+                    clearInterval(timer);
+                    $('.send').attr("disabled",false);
+                    $('.send').val("发送验证码");
+                }
+            },1000);
+        }
     </script>
 </head>
 <body>
@@ -45,7 +62,9 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td><input type="button" class="send" value="发送验证码" onclick="" /><input type="text" name="" id="vcode" placeholder="请输入验证码"/></td>
+                    <td>
+                        <input type="button" class="send" value="发送验证码" onclick="countdown()" /><input type="text" name="" id="vcode" placeholder="请输入验证码"/>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="1"><input type="button" value="返回" id="return"/></td>

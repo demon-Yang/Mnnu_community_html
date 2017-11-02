@@ -6,7 +6,7 @@ ul{display:block;margin:0;padding:0;list-style:none;}
 li{display:block;margin:0;padding:0;list-style: none;}
 dl,dt,dd,span{margin:0;padding:0;}
 a,a:focus{text-decoration:none;color:#000;outline:none;}
-a:hover{color:#00a4ac;text-decoration:none;}
+a:hover{color: #007b83;text-decoration:none;}
 table{border-collapse:collapse;border-spacing: 0;}
 body{background-color: #dfdfdf;}
 /*头部*/
@@ -38,12 +38,12 @@ body{background-color: #dfdfdf;}
 /*login.html*/
 
 /*用户登录*/
-.login{width: 750px;height: 400px;background-color: #c7c7c7;position: absolute;top:100px;border-radius: 7px;}
+.login{width: 750px;height: 400px;background-color: #ffffff;position: absolute;top:100px;border-radius: 7px;}
 .login .left{float: left; }
 .login .left img{float: left;width: 300px;height: 400px;border-top-left-radius: 7px;border-bottom-left-radius: 7px;}
 .login .right{float: right;width: 450px;height: 400px;}
 .login .right td{width: 150px;height: 50px;}
-.login .right .title{font-size: 20px;color: #006600;display: inline-block;margin-left: 20px;}
+.login .right .title{font-size: 30px;color: #006600;display: inline-block;margin-left: 40px;font-family: cursive;}
 .login .right .close{font-size: 20px;color: #006600;display: inline-block;margin-right: 15px;}
 .login .right input[type='text']{width: 250px;height: 35px;margin-left: 45px;border-radius: 5px;margin-bottom: 10px;line-height: 35px;font-size: 15px;}
 .login .right input[type='password']{width: 250px;height: 35px;margin-left: 45px;border-radius: 5px;margin-bottom: 10px;line-height: 35px;font-size: 15px;}
@@ -57,12 +57,12 @@ body{background-color: #dfdfdf;}
 /*forgetpwd.html*/
 
 /*忘记密码*/
-.forgetpwd{width: 700px;height: 400px;background-color: #c7c7c7;position: absolute;top: 100px;border-radius: 7px;}
+.forgetpwd{width: 700px;height: 400px;background-color: #ffffff;position: absolute;top: 100px;border-radius: 7px;}
 .forgetpwd .left{float: left;}
 .forgetpwd .left img{float: left;width: 300px;height: 400px;border-top-left-radius: 7px;border-bottom-left-radius: 7px;}
 .forgetpwd .right{float: right;width: 400px;height: 400px;}
 .forgetpwd .right td{width: 200px;height: 50px;}
-.forgetpwd .right .title{font-size: 20px;color: #006600;margin-left:20px;display: inline-block;}
+.forgetpwd .right .title{font-size: 30px;color: #006600;margin-left:20px;display: inline-block;font-family: cursive;}
 .forgetpwd .right .close{font-size: 20px;color: #006600;margin-left:100px;display: inline-block;}
 .forgetpwd .right input[type='email']{width: 220px;height: 35px;margin-left: 30px;border-radius: 5px;margin-bottom: 15px;line-height: 35px;font-size: 15px;}
 .forgetpwd .right input[type='text']{width: 220px;height: 35px;margin-left: 30px;border-radius: 5px;margin-bottom: 15px;line-height: 35px;font-size: 15px;}
@@ -74,12 +74,12 @@ body{background-color: #dfdfdf;}
 /*register.html*/
 
 /*注册*/
-.register{width: 700px;height: 450px;background-color: #c7c7c7;position: absolute;top: 100px;border-radius: 7px;}
+.register{width: 700px;height: 450px;background-color: #ffffff;position: absolute;top: 100px;border-radius: 7px;}
 .register .left{float: left;}
 .register .left img{float: left;width: 300px;height: 450px;border-top-left-radius: 7px;border-bottom-left-radius: 7px;}
 .register .right{float: right;width: 400px;height: 450px;}
 .register .right td{width: 200px;height: 50px;}
-.register .right .title{font-size: 20px;color: #006600;margin-left:20px;display: inline-block;}
+.register .right .title{font-size: 30px;color: #006600;margin-left:30px;display: inline-block;font-family: cursive;}
 .register .right .close{font-size: 20px;color: #006600;margin-left:120px;display: inline-block;}
 .register .right input[type='email']{width: 220px;height: 35px;margin-left: 30px;border-radius: 5px;margin-bottom: 10px;line-height: 35px;font-size: 15px;}
 .register .right input[type='text']{width: 220px;height: 35px;margin-left: 30px;border-radius: 5px;margin-bottom: 10px;line-height: 35px;font-size: 15px;}
@@ -147,6 +147,7 @@ body{background-color: #dfdfdf;}
 .forum .container .left .itab li{float:left;height:37px; line-height:37px;background-color: #a7afba; border-right:solid 1px #727e85;}
 .forum .container .left .itab ul li a{font-size:14px; color:#000; padding-left:25px; padding-right:25px;}
 .forum .container .left .itab ul li a.selected{ height:37px; display:block; background-color: #dfdfdf; font-weight:bold;border-top: solid 2px #00a4ac;border-left: solid 1px #d0dee5;}
+.forum .container .left .post{display: block; float: left; width: 80px; background-color: #8a8682; line-height: 30px; height: 30px; font-size: 15px; text-align: center; border-radius: 4px; margin-top: 10px;}
 .forum .container .left .seraches{margin-top: 10px;height: 45px;margin-left: 300px;}
 .forum .container .left .seraches input[type='text']{width: 150px; height: 32px; line-height: 32px; text-indent: 10px;border-radius: 4px;}
 .forum .container .left .seraches select{width: 130px; height: 35px; line-height: 32px;border-radius: 4px;text-align: center; }
@@ -182,6 +183,7 @@ body{background-color: #dfdfdf;}
 .detail .container .left .landlord .name{font-size: 18px;color: #022303;}
 .detail .container .left .landlord .motto{color: #999999;}
 .detail .container .left .landlord p{margin-right: 20px;}
+.detail .container .left .landlord .gocomment{display: inline-block; background-color: #b1b8bc; width: 95px; border-radius: 4px; height: 30px; font-size: 17px; margin-right: 50px;margin-bottom: 5px;}
 .detail .container .left .landlord .type{display: inline-block;background-color: #b1b8bc;width: 80px;border-radius: 4px;text-align: center;}
 .detail .container .left .landlord .reply{display: inline-block;background-color: #d4dbdf;width: 50px;border-radius: 4px;text-align: center;}
 .detail .container .left .landlord .title{font-size: 25px;text-align: center;height: 50px;line-height: 50px;}
@@ -196,10 +198,16 @@ body{background-color: #dfdfdf;}
 .detail .container .left .comments .inright .empty{width: 550px;height: 100px;}
 .detail .container .left .comments .comment{background-color: #efefef;border-radius: 0 5px 0 0;padding: 20px 20px 0 20px;}
 .detail .container .left .comments .comment .reply{background-color: #d4dbdf;border-radius: 5px;}
+.detail .container .left .comments .comment .reply .answer input{width: 500px; height: 35px; margin-left: 10px; margin-top: 10px; border-radius: 4px; font-size: 15px; margin-bottom: 7px;}
+.detail .container .left .comments .comment .reply .answer button{margin-bottom:10px;margin-left: 460px; width: 50px; height: 25px; background-color: #72b8ba; border-radius: 3px;}
 .detail .container .left .comments .comment p {height: 20px;line-height: 20px;padding-bottom: 10px;}
 .detail .container .left .comments .comment .retract{background-color: #d4dbdf;height: 20px;text-align: center;width: 80px;display: inline-block;border-radius: 4px;}
 .detail .container .left .comments .comment .reply img{width: 36px;height: 36px;margin: 8px 5px 0 8px;object-fit: cover;}
 .detail .container .left .comments .comment .reply .total{vertical-align: 15px;}
+.detail .container .left .edit{width:700px;height: 300px;background-color: #efefef;}
+.detail .container .left .edit p{ height: 30px; padding-top: 30px; padding-left: 40px; font-size: 15px; font-weight: 600;}
+.detail .container .left .edit textarea{height: 200px;width: 500px; margin-left: 40px; font-size: 15px;}
+.detail .container .left .edit input {height: 30px; width: 80px; margin-left: 20px; font-size: 15px;border-radius: 4px;background-color: #909090;}
 
 .detail .container .right{width: 300px;float: right;}
 .detail .container .right .hot{width: 290px;height: 500px;background-color: #ffffff;margin-top: 10px;margin-left: 10px;border-radius:5px;}
@@ -218,11 +226,12 @@ body{background-color: #dfdfdf;}
 .market .container .itab li{float:left;height:37px; line-height:37px;background-color: #a7afba; border-right:solid 1px #727e85;}
 .market .container .itab ul li a{font-size:14px; color:#000; padding-left:25px; padding-right:25px;}
 .market .container .itab ul li a.selected{ height:37px; display:block; background-color: #dfdfdf; font-weight:bold;border-top: solid 2px #00a4ac;border-left: solid 1px #d0dee5;}
+.market .container .edit{display: block; float: left; width: 80px; background-color: #8a8682; line-height: 30px; height: 30px; font-size: 15px; text-align: center; border-radius: 4px; margin-top: 10px;}
 .market .container .seraches{margin-top: 10px;height: 45px;margin-left: 700px;}
 .market .container .seraches input[type='text']{width: 200px; height: 32px; line-height: 32px; text-indent: 10px;border-radius: 4px;}
 .market .container .seraches input[type='submit']{width: 80px; height: 35px; line-height: 32px;border-radius: 4px;text-align: center;background-color: #a7afba;}
 .market .container .goods{width: 100%;}
-.market .container .goods li{float: left;width: 320px;height: 330px;background-color: #f4f4f4;margin-top: 10px;border-radius: 5px;margin-left: 10px;}
+.market .container .goods li{float: left;width: 320px;height: 350px;background-color: #f4f4f4;margin-top: 10px;border-radius: 5px;margin-left: 10px;}
 .market .container .goods .left{width: 50px;height: 300px;float: left;}
 .market .container .goods .left:first-child{margin-top: 30px;}
 .market .container .goods .small{width: 50px;height: 50px;margin-top: 5px;margin-left: 5px;border-radius: 4px;object-fit: cover;}
@@ -230,6 +239,7 @@ body{background-color: #dfdfdf;}
 .market .container .goods .title{font-weight: 900;margin-top: 10px;height: 25px;line-height: 25px;font-size: 14px;}
 .market .container .goods .contact{text-indent: 2em;}
 .market .container .goods .content{text-indent: 2em;}
+.market .container .goods .time{margin-right: 5px;color: #a7a7a7;}
 .market .container .goods .big{width: 240px;height: 200px;margin-left: 18px;border-radius: 4px;object-fit: cover;}
 
 
@@ -421,7 +431,7 @@ body{background-color: #dfdfdf;}
 .personmedit .container .right .private .edit{margin-top: 60px;margin-left: 20px;float: left;width: 300px;}
 .personmedit .container .right .private .preview {margin-top: 60px;margin-right: 30px;float: right;width: 320px;height: 330px;}
 
-.personmedit .container .right .private li{float: left;width: 320px;height: 330px;background-color: #f4f4f4;border-radius: 5px;}
+.personmedit .container .right .private li{float: left;width: 320px;height: 350px;background-color: #f4f4f4;border-radius: 5px;}
 .personmedit .container .right .private .left{width: 50px;height: 300px;float: left;}
 .personmedit .container .right .private .left:first-child{margin-top: 30px;}
 .personmedit .container .right .private .small{width: 50px;height: 50px;margin-top: 5px;margin-left: 5px;border-radius: 4px;object-fit: cover;background-color: #ffffff;}
@@ -429,6 +439,7 @@ body{background-color: #dfdfdf;}
 .personmedit .container .right .private .title{font-weight: 900;margin-top: 10px;height: 25px;line-height: 25px;font-size: 14px;}
 .personmedit .container .right .private .contact{text-indent: 2em;font-size: 13px;}
 .personmedit .container .right .private .content{text-indent: 2em;font-size: 13px;}
+.personmedit .container .right .private .time{margin-right: 5px;color: #a7a7a7;font-size: 10px;}
 .personmedit .container .right .private .big{width: 240px;height: 200px;margin-left: 18px;border-radius: 4px;object-fit: cover;}
 
 
