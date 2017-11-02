@@ -198,9 +198,11 @@ body{background-color: #dfdfdf;}
 .detail .container .left .comments .inright .empty{width: 550px;height: 100px;}
 .detail .container .left .comments .comment{background: url("../images/forumbg.jpg");border-radius: 0 5px 0 0;padding: 20px 20px 0 20px;}
 .detail .container .left .comments .comment .reply{background-color: #d4dbdf;border-radius: 5px;}
-.detail .container .left .comments .comment .reply .answer input{width: 500px; height: 35px; margin-left: 10px; margin-top: 10px; border-radius: 4px; font-size: 15px; margin-bottom: 7px;}
+.detail .container .left .comments .comment .reply .answer .message{width: 500px; height: 35px; margin-left: 10px;border-radius: 4px; font-size: 15px; margin-top: 10px;background-color: #FFFFFF;overflow: hidden;line-height: 30px;}
 .detail .container .left .comments .comment .reply .answer button{margin-bottom:10px;margin-left: 460px; width: 50px; height: 25px; background-color: #72b8ba; border-radius: 3px;}
-.detail .container .left .comments .comment .reply .answer img{height: 24px;width: 24px;margin-left: 10px;}
+.detail .container .left .comments .comment .reply .answer span img{height: 24px;width: 24px;margin-left: 10px;display: block;}
+.detail .container .left .comments .comment .reply .answer .emtion{height: 100px;width: 200px;margin-left: 20px;background-color: #FFFFFF;position:absolute;display: none;}
+.detail .container .left .comments .comment .reply .answer .emtion li{height: 24px;width: 24px;float: left;margin: 2px;cursor: pointer;}
 .detail .container .left .comments .comment p {height: 20px;line-height: 20px;padding-bottom: 10px;}
 .detail .container .left .comments .comment .retract{background-color: #d4dbdf;height: 20px;text-align: center;width: 80px;display: inline-block;border-radius: 4px;}
 .detail .container .left .comments .comment .reply .face{width: 36px;height: 36px;margin: 8px 5px 0 8px;object-fit: cover;}

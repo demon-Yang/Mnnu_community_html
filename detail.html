@@ -35,6 +35,23 @@
               $(this).parent().parent().next().slideToggle(1000);
           });
 
+            //点击小图片，显示表情
+            $("#emo").click(function(e){
+                $(".emtion").slideDown(500);//慢慢向下展开
+                e.stopPropagation();   //阻止冒泡事件
+            });
+
+            //在桌面任意地方点击，他是关闭
+            $(document).click(function(){
+                $(".emtion").slideUp(500);//慢慢向上收
+            });
+
+            //点击小图标时，添加功能
+            $(".emtion ul li").click(function(){
+                var simg=$(this).find("img").clone();
+                $(".message").append(simg);
+            });
+
         })
 
     </script>
@@ -125,39 +142,30 @@
                                             </li>
                                         </ul>
                                         <div class="answer">
-                                            <input type="text" name=""/>
-                                          <!--  <span class="emotion"><img src="images/qqface/1.gif"></span>-->
-                                            <button>发表</button>
+                                            <div class="message" contentEditable='true'></div>
+                                            <span><img src="images/qqface/1.gif" id="emo"></span>
+                                            <div class="emtion">
+                                                <ul>
+                                                    <li><img src="images/qqface/1.gif" title="[可爱]"></li>
+                                                    <li><img src="images/qqface/1.gif" title="[可爱]"></li>
+                                                    <li><img src="images/qqface/1.gif" title="[可爱]"></li>
+                                                    <li><img src="images/qqface/1.gif" title="[可爱]"></li>
+                                                    <li><img src="images/qqface/2.gif" title="[可怜]"></li>
+                                                    <li><img src="images/qqface/3.gif" title="[挖鼻屎]"></li>
+                                                    <li><img src="images/qqface/4.gif" title="[吃惊]"></li>
+                                                    <li><img src="images/qqface/5.gif" title="[害羞]"></li>
+                                                    <li><img src="images/qqface/6.gif" title="[挤眼]"></li>
+                                                    <li><img src="images/qqface/7.gif" title="[闭嘴]"></li>
+                                                    <li><img src="images/qqface/7.gif" title="[闭嘴]"></li>
+                                                </ul>
+                                            </div>
+                                            <button class="send">发表</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div style="clear: both"></div>
                         </li>
-                         <li class="per">
-                             <div class="inleft">
-                                 <img src="images/detail1.jpg"><p class="name" align="center">沈卓盈</p>
-                             </div>
-                             <div class="inright">
-                                 <div class="comment">
-                                     <p>终于有人回应了，谢谢关照</p>
-                                     <p>终于有人回应了，谢谢关照</p>
-                                     <p>终于有人回应了，谢谢关照</p>
-                                     <div class="empty"></div>
-                                     <div><p align="right">2017-09-30 16:59&nbsp;&nbsp;<span class="retract">&nbsp;收起回复&nbsp;&nbsp;</span></p></div>
-                                     <div class="reply">
-                                         <ul>
-
-                                         </ul>
-                                         <div class="answer">
-                                             <input type="text" name=""/>
-                                             <button>发表</button>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div style="clear: both"></div>
-                         </li>
                      </ul>
                 </div>
                 <div class="edit">
