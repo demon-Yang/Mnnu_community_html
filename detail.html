@@ -6,7 +6,17 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/headSilde.js"></script>
+    <script type="text/javascript" src="kindeditor/kindeditor-all-min.js"></script>
+    <script type="text/javascript" src="js/jquery.qqFace.js"></script>
     <script type="text/javascript">
+        KindEditor.ready(function(K) {
+            K.create('#editor', {
+                width : '660px',
+                uploadJson : '../jsp/upload_json.jsp',
+                fileManagerJson : '../jsp/file_manager_json.jsp',
+                allowFileManager : true
+            });
+        });
         $(function(){
             setInterval(function(){
                 if( $(window).scrollTop() > 186){
@@ -24,7 +34,9 @@
                     $(this).text("回复");
               $(this).parent().parent().next().slideToggle(1000);
           });
+
         })
+
     </script>
 </head>
 <body>
@@ -100,13 +112,13 @@
                                     <div class="reply">
                                         <ul>
                                             <li>
-                                                <img src="images/detail1.jpg">
+                                                <img src="images/detail1.jpg" class="face">
                                                 <span class="total"><span class="from">法拉诗韵:</span> 回复  <span class="to">魄岁月 </span>:华仔哈哈哈，你好你好</span>
                                                 <p align="right">2014-9-27 09:34&nbsp;回复&nbsp;&nbsp;</p>
                                                 <hr/>
                                             </li>
                                             <li>
-                                                <img src="images/detail1.jpg">
+                                                <img src="images/detail1.jpg" class="face">
                                                 <span class="total"><span class="from">法拉诗韵:</span> 回复  <span class="to">魄岁月 </span>:华仔哈哈哈，你好你好</span>
                                                 <p align="right">2014-9-27 09:34&nbsp;回复&nbsp;&nbsp;</p>
                                                 <hr/>
@@ -114,6 +126,7 @@
                                         </ul>
                                         <div class="answer">
                                             <input type="text" name=""/>
+                                          <!--  <span class="emotion"><img src="images/qqface/1.gif"></span>-->
                                             <button>发表</button>
                                         </div>
                                     </div>
@@ -149,10 +162,12 @@
                 </div>
                 <div class="edit">
                     <p>发表评论</p>
-                    <form action="">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <input type="submit" value="提交"/>
-                    </form>
+                    <div class="content">
+                        <form action="">
+                        <textarea name="" id="editor"></textarea>
+                            <input type="submit" value="提交"/>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="right">
