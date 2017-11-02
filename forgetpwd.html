@@ -6,9 +6,13 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
+        $(function(){
+            var mheight = $(window).width()/2-300;
+            $(".forgetpwd").css({"left":mheight+"px"});
+
+        })
         function send(){
             if( $(".send").val == "发送验证码"){
-
             }
         }
     </script>

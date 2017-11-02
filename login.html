@@ -11,6 +11,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
        $(function(){
+           var mheight = $(window).width()/2-375;
+           $(".login").css({"left":mheight+"px"});
+
            $("#slider").slider({
                width:250,
                callback: function(result) {
@@ -25,7 +28,7 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-hidden="true">
     <div class="login">
         <div class="left">
-            <img src="images/loginbg.jpg"/>
+            <img src="images/login.png"/>
         </div>
         <div class="right">
             <form action="">

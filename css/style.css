@@ -38,8 +38,8 @@ body{background-color: #dfdfdf;}
 /*login.html*/
 
 /*用户登录*/
-.login{width: 750px;height: 400px;background-color: #c7c7c7;position: absolute;top: 100px;left: 300px;}
-.login .left{float: left;background-color: #00a400;}
+.login{width: 750px;height: 400px;background-color: #f4f4f4;position: absolute;top:100px;}
+.login .left{float: left; }
 .login .left img{float: left;width: 300px;height: 400px;}
 .login .right{float: right;width: 450px;height: 400px;}
 .login .right td{width: 150px;height: 50px;}
@@ -57,7 +57,7 @@ body{background-color: #dfdfdf;}
 /*forgetpwd.html*/
 
 /*忘记密码*/
-.forgetpwd{width: 700px;height: 400px;background-color: #c7c7c7;position: absolute;top: 100px;left: 300px;}
+.forgetpwd{width: 700px;height: 400px;background-color: #c7c7c7;position: absolute;top: 100px;}
 .forgetpwd .left{float: left;background-color: #00a400;}
 .forgetpwd .left img{float: left;width: 300px;height: 400px;}
 .forgetpwd .right{float: right;width: 400px;height: 400px;}
@@ -74,7 +74,7 @@ body{background-color: #dfdfdf;}
 /*register.html*/
 
 /*注册*/
-.register{width: 700px;height: 450px;background-color: #c7c7c7;position: absolute;top: 100px;left: 300px;}
+.register{width: 700px;height: 450px;background-color: #c7c7c7;position: absolute;top: 100px;}
 .register .left{float: left;background-color: #00a400;}
 .register .left img{float: left;width: 300px;height: 450px;}
 .register .right{float: right;width: 400px;height: 450px;}
