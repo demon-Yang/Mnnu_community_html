@@ -23,7 +23,7 @@ body{background-color: #dfdfdf;}
 .header .menu li:hover > a { border-left: 3px solid #C4302B; color: #000000
 }
 /*旋转效果*/
-.header .submenu { position: relative;z-index: 1; -webkit-perspective: 400px; -moz-perspective: 400px; -ms-perspective: 400px; -o-perspective: 400px; perspective: 400px; }
+.header .submenu { position: relative;z-index: 9999; -webkit-perspective: 400px; -moz-perspective: 400px; -ms-perspective: 400px; -o-perspective: 400px; perspective: 400px; }
 .header .submenu li { opacity: 0; -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -ms-transform: rotateY(90deg); -o-transform: rotateY(90deg); transform: rotateY(90deg);
  -webkit-transition: opacity .4s, -webkit-transform .5s; -moz-transition: opacity .4s, -moz-transform .5s; -ms-transition: opacity .4s, -ms-transform .5s; -o-transition: opacity .4s, -o-transform .5s; transition: opacity .4s, transform .5s; }
 .header .submenu li:nth-child(1) { -webkit-transition-delay: 350ms; -moz-transition-delay: 350ms; -ms-transition-delay: 350ms; -o-transition-delay: 350ms; transition-delay: 350ms; }
@@ -93,15 +93,8 @@ body{background-color: #dfdfdf;}
 
 /*index.html*/
 
-/*轮播图*/
 .index .container {position: relative;}
-.index .container .slides ul{height: 350px;}
-.index .container .slides #slide1{border-radius:8px;position: absolute;width: 1000px;height: 350px;background: url("../images/slide1.jpg") no-repeat;}
-.index .container .slides #slide2{border-radius:8px;position: absolute;width: 1000px;height: 350px;background: url("../images/slide2.jpg") no-repeat;}
-.index .container .slides #slide3{border-radius:8px;position: absolute;width: 1000px;height: 350px;background: url("../images/slide3.jpg") no-repeat;}
-.index .container .slides .pagination{position:absolute;top: 330px;left: 450px;}
-.index .container .slides .pagination li { display: block;float: left; width: 10px; height: 10px;  margin-left: 15px; border-radius: 5px; background: #e0f6ff; }
-.index .container .slides .pagination .current{background: #ffbd20;}
+.index .container .swiper-container{width: 100%;height: 350px;border-radius: 8px;}
 /*文章 专题*/
 .index .container .article{float: left;width: 750px;}
 .index .container .article .academic {border-radius:5px;float:left;width: 300px;height: 285px; border: 1px #CCCCCC solid; background: #ffffff; margin-top: 8px;}

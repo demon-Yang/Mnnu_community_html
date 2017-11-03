@@ -6,7 +6,7 @@ ul{display:block;margin:0;padding:0;list-style:none;}
 li{display:block;margin:0;padding:0;list-style: none;}
 dl,dt,dd,span{margin:0;padding:0;}
 a,a:focus{text-decoration:none;color:#000;outline:none;}
-a:hover{color: #00878f;text-decoration:none;background-color: #FFFFFF;border-left: solid 3px red;}
+a:hover{color: #007b83;text-decoration:none;background-color: #d3d3d3;border-radius: 5px;}
 table{border-collapse:collapse;border-spacing: 0;}
 body{background-color: #dfdfdf;}
 

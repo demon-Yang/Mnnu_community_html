@@ -6,21 +6,30 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/headSilde.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+    <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
     <script type="text/javascript">
-        var n = 0,count;
-        var t,t1;
+        var t1;
         $(function(){
-            /*头部轮播效果 */
-            count=$(".container .slides .slide li").length;
-            $(".container .slides .slide li:not(:first-child)").hide();
-            $(".container .slides .pagination li").click(function(){
-                n = $(this).val() - 1;
-                $(".container .slides .slide li").filter(":visible").fadeOut(500).parent().children().eq(n).fadeIn(1000);
-                $(this).toggleClass("current");
-                $(this).siblings().removeAttr("class");
+            /*头部轮播图*/
+            var mySwiper = new Swiper(".swiper-container",{
+                autoplay:5000,/*每隔3秒自动播放*/
+                loop:true,/*形成环路（即：可以从最后一张图跳转到第一张图*/
+                pagination:".swiper-pagination",/*分页器*/
+                autoplayDisableOnInteraction:false,
+                paginationClickable:true,
+                effect : 'fade',
+                fade: {
+                    crossFade: true,
+                },
+                speed:2000,
             });
-            t = setInterval("showAuto()", 5000);
-            $(".container .slides .slide li").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 5000);});
+            $('.swiper-container').mouseover(function(){
+                mySwiper.stopAutoplay();
+            });
+            $('.swiper-container').mouseout(function(){
+                mySwiper.startAutoplay();
+            });
 
             /*专题轮播图*/
             $(".container .mnnu .prev").click(function(){
@@ -35,19 +44,15 @@
                 else
                     $(".container .mnnu .slides ul").animate({left:"0"},700);
             });
-          /*  t1 = setInterval("showPic()", 5000);
-            $(".container .mnnu .slides").hover(function(){clearInterval(t1)}, function(){t1 = setInterval("showPic()", 4000);});*/
+            t1 = setInterval("showPic()", 5000);
+            $(".container .mnnu .slides").hover(function(){clearInterval(t1)}, function(){t1 = setInterval("showPic()", 4000);});
         });
-        /*头部自动切换图片*/
-        function showAuto()
-        {
-            n = n >=(count - 1) ? 0 : ++n;
-            $(".container .slides .pagination li").eq(n).trigger('click');
-        }
+
         /*专题自动切换图片*/
         function showPic(){
             $(".container .mnnu .prev").trigger('click');
         }
+
     </script>
 </head>
 <body>
@@ -91,15 +96,13 @@
             </div>
         </div>
         <div class="container">
-            <div class="slides">
-                <ul class="slide">
-                    <li id="slide1"></li>
-                    <li id="slide2"></li>
-                    <li id="slide3"></li>
-                </ul>
-                <ul class="pagination">
-                    <li class="current" value="1"></li><li class="" value="2"></li><li class="" value="3"></li>
-                </ul>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/slide1.jpg"></div>
+                    <div class="swiper-slide"><img src="images/slide2.jpg"></div>
+                    <div class="swiper-slide"><img src="images/slide3.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div><!--分页器-->、
             </div>
             <div class="article">
                     <div class="academic">
