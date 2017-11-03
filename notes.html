@@ -21,26 +21,29 @@
             $('#wish').wish();
             $('.wish').draggable({containment:'#wish',scroll:false});
 
-            /*表情包*/
-            $('.emotion').qqFace({
-                id : 'facebox',
-                assign:'note',
-                path:'images/qqface/'	//表情存放的路径
-            });
-            $("#submit").click(function(){
-                var str = $("#note").val();
-                $("#wish").append("<li><div class='text'>"+replace_em(str)+"</div></li>");
 
+            $("#submit").click(function(){
+                var str = $(".message").html();
+                $("#wish").append("<li><div class='text'>"+str+"</div></li>");
+
+            });
+            //点击小图片，显示表情
+            $("#emo").click(function(e){
+                $(".emotions").slideDown(500);//慢慢向下展开
+                e.stopPropagation();   //阻止冒泡事件
+            });
+
+            //在桌面任意地方点击，他是关闭
+            $(document).click(function(){
+                $(".emotions").slideUp(500);//慢慢向上收
+            });
+
+            //点击小图标时，添加功能
+            $(".emotions ul li").click(function(){
+                var simg=$(this).find("img").clone();
+                $(".message").append(simg);
             });
         })
-
-        function replace_em(str){
-            str = str.replace(/\</g,'&lt;');
-            str = str.replace(/\>/g,'&gt;');
-            str = str.replace(/\n/g,'<br/>');
-            str = str.replace(/\[em_([0-9]*)\]/g,'<img src="images/qqface/$1.gif" border="0" />');
-            return str;
-        }
     </script>
 </head>
 <body>
@@ -92,11 +95,66 @@
                 <li><div class="text">VR额污染而温柔</div></li>
             </ul>
             <div class="edit">
-                <form action="">
-                    <textarea name="note" id="note"></textarea><br/>
-                    <span class="emotion"><img src="images/qqface/1.gif"></span>
+                <div class="gowish">
+                    <div class="message" contenteditable="true"></div>
+                    <span><img src="images/qqface/1.gif" id="emo"></span>
+                    <div class="emotions">
+                        <ul>
+                            <li><img src="images/qqface/1.gif" ></li>
+                            <li><img src="images/qqface/2.gif" ></li>
+                            <li><img src="images/qqface/3.gif" ></li>
+                            <li><img src="images/qqface/4.gif" ></li>
+                            <li><img src="images/qqface/5.gif" ></li>
+                            <li><img src="images/qqface/6.gif" ></li>
+                            <li><img src="images/qqface/7.gif" ></li>
+                            <li><img src="images/qqface/8.gif" ></li>
+                            <li><img src="images/qqface/9.gif" ></li>
+                            <li><img src="images/qqface/10.gif" ></li>
+                            <li><img src="images/qqface/11.gif" ></li>
+                            <li><img src="images/qqface/12.gif" ></li>
+                            <li><img src="images/qqface/13.gif" ></li>
+                            <li><img src="images/qqface/14.gif" ></li>
+                            <li><img src="images/qqface/15.gif" ></li>
+                            <li><img src="images/qqface/16.gif" ></li>
+                            <li><img src="images/qqface/17.gif" ></li>
+                            <li><img src="images/qqface/18.gif" ></li>
+                            <li><img src="images/qqface/19.gif" ></li>
+                            <li><img src="images/qqface/20.gif" ></li>
+                            <li><img src="images/qqface/21.gif" ></li>
+                            <li><img src="images/qqface/22.gif" ></li>
+                            <li><img src="images/qqface/23.gif" ></li>
+                            <li><img src="images/qqface/24.gif" ></li>
+                            <li><img src="images/qqface/25.gif" ></li>
+                            <li><img src="images/qqface/26.gif" ></li>
+                            <li><img src="images/qqface/27.gif" ></li>
+                            <li><img src="images/qqface/28.gif" ></li>
+                            <li><img src="images/qqface/29.gif" ></li>
+                            <li><img src="images/qqface/30.gif" ></li>
+                            <li><img src="images/qqface/31.gif" ></li>
+                            <li><img src="images/qqface/32.gif" ></li>
+                            <li><img src="images/qqface/33.gif" ></li>
+                            <li><img src="images/qqface/34.gif" ></li>
+                            <li><img src="images/qqface/35.gif" ></li>
+                            <li><img src="images/qqface/36.gif" ></li>
+                            <li><img src="images/qqface/37.gif" ></li>
+                            <li><img src="images/qqface/38.gif" ></li>
+                            <li><img src="images/qqface/39.gif" ></li>
+                            <li><img src="images/qqface/40.gif" ></li>
+                            <li><img src="images/qqface/41.gif" ></li>
+                            <li><img src="images/qqface/42.gif" ></li>
+                            <li><img src="images/qqface/43.gif" ></li>
+                            <li><img src="images/qqface/44.gif" ></li>
+                            <li><img src="images/qqface/45.gif" ></li>
+                            <li><img src="images/qqface/46.gif" ></li>
+                            <li><img src="images/qqface/47.gif" ></li>
+                            <li><img src="images/qqface/48.gif" ></li>
+                            <li><img src="images/qqface/49.gif" ></li>
+                            <li><img src="images/qqface/50.gif" ></li>
+                            <li><img src="images/qqface/51.gif" ></li>
+                        </ul>
+                    </div>
                     <input type="button" value="我要上墙" id="submit"/>
-                </form>
+                </div>
             </div>
         </div>
         <div class="footer">

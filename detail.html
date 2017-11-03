@@ -37,17 +37,17 @@
 
             //点击小图片，显示表情
             $("#emo").click(function(e){
-                $(".emtion").slideDown(500);//慢慢向下展开
+                $(".emotions").slideDown(500);//慢慢向下展开
                 e.stopPropagation();   //阻止冒泡事件
             });
 
             //在桌面任意地方点击，他是关闭
             $(document).click(function(){
-                $(".emtion").slideUp(500);//慢慢向上收
+                $(".emotions").slideUp(500);//慢慢向上收
             });
 
             //点击小图标时，添加功能
-            $(".emtion ul li").click(function(){
+            $(".emotions ul li").click(function(){
                 var simg=$(this).find("img").clone();
                 $(".message").append(simg);
             });
@@ -144,7 +144,7 @@
                                         <div class="answer">
                                             <div class="message" contentEditable='true'></div>
                                             <span><img src="images/qqface/1.gif" id="emo"></span>
-                                            <div class="emtion">
+                                            <div class="emotions">
                                                 <ul>
                                                     <li><img src="images/qqface/1.gif" title="[可爱]"></li>
                                                     <li><img src="images/qqface/1.gif" title="[可爱]"></li>
